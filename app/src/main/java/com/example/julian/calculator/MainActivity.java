@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button enterBtn;
     Button clearBtn;
-    Button backBtn;
+    Button deleteBtn;
     Button dotBtn;
 
 
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         resultDisplay = (EditText) findViewById(R.id.res);
         resultDisplay.setFocusable(false);
+        resultDisplay.setEnabled(false);
         resultDisplay.setClickable(true);
 
         calcDisplay = (EditText) findViewById(R.id.currCalc);
@@ -104,8 +105,8 @@ public class MainActivity extends AppCompatActivity {
         dotBtn = (Button) findViewById(R.id.btnDot);
         displayVal(dotBtn);
 
-        backBtn = (Button) findViewById(R.id.btnBack);
-        displayVal(backBtn);
+        deleteBtn = (Button) findViewById(R.id.btnDelete);
+        displayVal(deleteBtn);
     }
 
     /**
@@ -145,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 } else if (btnTxt.equals("CLEAR")) {
                     clearCalc();
-                } else if (btnTxt.equals("BACK")){
+                } else if (btnTxt.equals("DEL")){
                     String currNum = resultDisplay.getText().toString();
                     currNum = removeLastChar(currNum);
                     resultDisplay.setText(currNum);
