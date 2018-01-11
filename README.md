@@ -1,2 +1,13 @@
 # Calculator
-Generic Calculator Application for android devices.
+### Generic Calculator Application for android devices.
+###### Developed by Julian Barker
+
+### Start Screen
+  - At startup, users can immediately perform basic mathematical computations.
+  - When number buttons are pressed, it is displayed on the screen.
+  - After computing basic arithmetic, 
+  
+### Running Screen
+  - When number buttons are pressed, it is displayed on the screen.
+  - After Pressing the 'equals' button, the expression is displayed above the result.
+![Running](https://github.com/julianb393/Calculator/blob/master/screenshots/running.png)
